@@ -21,7 +21,7 @@ const GenerateImage = () => {
     if (prompt && photo) {
       setLoading(true);
       try {
-        const response = await fetch("https://crul.onrender.com/api/v1/post", {
+        const response = await fetch("https://imaginai-server.onrender.com/api/v1/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const GenerateImage = () => {
     if (prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch("https://crul.onrender.com/api/v1/crul", {
+        const response = await fetch("https://imaginai-server.onrender.com/api/v1/crul", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

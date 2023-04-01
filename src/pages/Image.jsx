@@ -17,7 +17,7 @@ const Image = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://crul.onrender.com/api/v1/post/${id}`,
+          `https://imaginai-server.onrender.com/api/v1/post/${id}`,
           {
             method: "GET",
             headers: {

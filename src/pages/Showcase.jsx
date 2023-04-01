@@ -8,7 +8,7 @@ const RenderCards = ({ data, title }) => {
         <h2 className="mt-5 font-bold text-green_opaque text-sora tex-xl uppercase">{title}</h2>
     )
 }
-const Showcasw = () => {
+const Showcase = () => {
     const [loading, setLoading] = React.useState(false);
     const [allPosts, setAllPosts] = React.useState(null);
     const [searchText, setSearchText] = React.useState('');
@@ -19,7 +19,7 @@ const Showcasw = () => {
             setLoading(true);
                 console.log('has started')
             try{
-                const response = await fetch('https://crul.onrender.com/api/v1/post',{
+                const response = await fetch('https://imaginai-server.onrender.com/api/v1/crul',{
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -138,4 +138,4 @@ const Showcasw = () => {
         </section>
     )
 }
-export default Showcasw
+export default Showcase
