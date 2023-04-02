@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FiDownload } from "react-icons/fi";
 import { artificialIntelligence, robotics, firmware } from "../../public/assets";
 
 const Detail = ({ name, prompt, photo, setNumber, showcase, loading }) => {
+  const navigate = useNavigate();
   const doc = { name, prompt, photo };
+  [loading, setLoading] = React.useState(false);
   const showcaseit = async (e) => {
     // e.preventDefault();
     if (prompt && photo) {
