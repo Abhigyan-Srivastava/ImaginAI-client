@@ -19,7 +19,7 @@ const Showcase = () => {
             setLoading(true);
                 console.log('has started')
             try{
-                const response = await fetch('https://imaginai-server.onrender.com/api/v1/crul/allposts',{
+                const response = await fetch('https://imaginai-server.onrender.com/api/v1/post/allposts',{
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

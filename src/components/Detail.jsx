@@ -6,13 +6,15 @@ import { artificialIntelligence, robotics, firmware } from "../../public/assets"
 const Detail = ({ name, prompt, photo, setNumber, showcase, loading }) => {
   const navigate = useNavigate();
   const doc = { name, prompt, photo };
-  [loading, setLoading] = React.useState(false);
+  const handleButtonClick = () => {
+    window.location.href = 'https://crul.vercel.app/showcase';
+  };
   const showcaseit = async (e) => {
     // e.preventDefault();
     if (prompt && photo) {
-      setLoading(true);
+     loading=true;
       try {
-        const response = await fetch("https://imaginai-server.onrender.com/api/v1/createpost", {
+        const response = await fetch("https://imaginai-server.onrender.com/api/v1/post/createnewpost", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -21,11 +23,12 @@ const Detail = ({ name, prompt, photo, setNumber, showcase, loading }) => {
         });
         await response.json();
         navigate("/showcase");
+        console.log(JSON.stringify(doc))
       } catch (Error) {
         alert(Error);
         console.log(Error);
       } finally {
-        setLoading(false);
+        loading=false;
       }
     } else {
       alert("Please enter a prompt and generate an image");
@@ -60,7 +63,7 @@ const Detail = ({ name, prompt, photo, setNumber, showcase, loading }) => {
             </button>
           ) : (
             <button
-              onClick={() => showcaseit()}
+              onClick={() => handleButtonClick()}
               className="text-navy py-3 px-6 sm:text text-sm bg-green_opaque text-[1.15rem] font-poppins rounded-md sm:w-auto w-full"
             >
               Showcase image
