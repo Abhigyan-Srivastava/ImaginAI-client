@@ -4,6 +4,31 @@ import { artificialIntelligence, robotics, firmware } from "../../public/assets"
 
 const Detail = ({ name, prompt, photo, setNumber, showcase, loading }) => {
   const doc = { name, prompt, photo };
+  const showcaseit = async (e) => {
+    // e.preventDefault();
+    if (prompt && photo) {
+      setLoading(true);
+      try {
+        const response = await fetch("https://imaginai-server.onrender.com/api/v1/createpost", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(doc),
+        });
+        await response.json();
+        navigate("/showcase");
+      } catch (Error) {
+        alert(Error);
+        console.log(Error);
+      } finally {
+        setLoading(false);
+      }
+    } else {
+      alert("Please enter a prompt and generate an image");
+    }
+  };
+  
   return (
     <div className="w-full flex flex-col md:flex-row py-6 md:py-12 min-h-[70vh] items-center relative sm:px-20 px-6">
       <div className="flex w-full mt-16 md:mt-0 md:w-6/12 justify-center">
@@ -32,30 +57,7 @@ const Detail = ({ name, prompt, photo, setNumber, showcase, loading }) => {
             </button>
           ) : (
             <button
-              onClick={async (e) => {
-                // e.preventDefault();
-                if (prompt && photo) {
-                  setLoading(true);
-                  try {
-                    const response = await fetch("https://imaginai-server.onrender.com/api/v1/createpost", {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
-                      body: JSON.stringify(doc),
-                    });
-                    await response.json();
-                    navigate("/showcase");
-                  } catch (Error) {
-                    alert(Error);
-                    console.log(Error);
-                  } finally {
-                    setLoading(false);
-                  }
-                } else {
-                  alert("Please enter a prompt and generate an image");
-                }
-              }}
+              onClick={() => showcaseit()}
               className="text-navy py-3 px-6 sm:text text-sm bg-green_opaque text-[1.15rem] font-poppins rounded-md sm:w-auto w-full"
             >
               Showcase image
