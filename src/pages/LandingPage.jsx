@@ -143,7 +143,7 @@ const LandingPage = () => {
         <div className="flex flex-col md:flex-row my-8 text-green_opaque mt-[4rem]">
           <div className="w-full md:w-6/12 flex flex-col justify-center items-center">
             <svg
-              xmlns=""
+              xmlns="/crul.svg"
               fill="currentColor"
               className="w-6/12"
               viewBox="0 0 16 16"
