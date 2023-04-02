@@ -7,6 +7,9 @@ const Header = () => {
   const toggle = () =>{
     isOpen(!open);
   }
+  const handleButtonClick = () => {
+    window.location.href = 'https://crul.vercel.app/showcase';
+  };
   return (
     <header className="w-full sm:relative z-20 fixed flex bg-navy justify-between items-center text-lightest_slate sm:px-20 px-6 py-7 ">
       <Link to="/">
@@ -34,10 +37,10 @@ const Header = () => {
           to="/showcase"
           className=" text-lightest_slate hover:text-green mx-5 font-poppins "
         >
-          <p onClick={()=>toggle()}>Showcase</p>
+          <p onClick={()=>handleButtonClick()}>Showcase</p>
         </Link>
         <Link
-          to="#faqs"
+          to="/ImaginAI-client#faqs"
           className=" text-lightest_slate hover:text-green mx-5 font-poppins"
         >
           <p onClick={()=>toggle()}>FAQ</p>

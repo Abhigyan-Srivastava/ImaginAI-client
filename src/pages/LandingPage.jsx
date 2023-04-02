@@ -166,7 +166,7 @@ const LandingPage = () => {
             >
               Try ImaginAI&nbsp;
               <svg
-                xmlns=""
+                xmlns="/crul.svg"
                 fill="currentColor"
                 className="w-4 h-4 mr-2"
                 viewBox="0 0 16 16"
@@ -178,7 +178,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="sm:px-20 px-6" id="faqs">
+      <section className="sm:px-20 px-6" id="faqsy">
         <div className="bg-lightblue py-20 px-4 text-zinc-500">
           <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
             <h2 className="mr-8 w-full md:w-1/3 text-3xl font-bold leading-9 text-zinc-400 mb-10 md:mb-0 font-poppins">
