@@ -76,29 +76,6 @@ const GenerateImage = () => {
       alert("Please enter a prompt");
     }
   };
-  
-
-  // const [jokes, setJokes] = React.useState([]);
-  // React.useEffect(()=>{
-  //   const generateJokes = async () => {
-  //       try {
-  //         const response = await fetch("https://localhost:4090/api/v1/crul/jokes", {
-  //           method: "POST",
-  //           headers: {
-  //             "Content-Type": "application/json",
-  //           },
-  //           body: JSON.stringify({ prompt: "Generate an array of jokes" }),
-  //         });
-  //         const data = await response.json();
-  //         console.log(data)
-  //         setJokes(data.jokes);
-  //       } catch (error) {
-  //         alert(error);
-  //         console.log(error);
-  //       }
-  //   };
-  //   generateJokes();
-  // }, [])
 
   return (
     <>
@@ -110,7 +87,7 @@ const GenerateImage = () => {
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="Generate AI Image using CRUL" />
-        <title>Generate Image -CRUL</title>
+        <title>Generate Image -ImaginAI</title>
         <meta name="theme-color" content="#0a192f" />
         {/* <link rel="shortcut icon" href={faviconHref} sizes="any" /> */}
         <link rel="manifest" href="../../public/manifest.json" />
