@@ -88,7 +88,7 @@ const Image = () => {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@Emmanuel_Omoiya" />
+        <meta name="twitter:creator" content="@Abhigyan_Srivastava" />
         <meta
           name="twitter:title"
           content={` AI Image - CRUL`}

@@ -112,7 +112,7 @@ const GenerateImage = () => {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@Emmanuel_Omoiya" />
+        <meta name="twitter:creator" content="@Abhigyan_Srivastava" />
         <meta name="twitter:title" content="Generate AI Image - CRUL" />
         <meta
           name="twitter:description"

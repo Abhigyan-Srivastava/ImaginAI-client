@@ -84,7 +84,7 @@ const Showcase = () => {
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:creator" content="@Emmanuel_Omoiya" />
+                <meta name="twitter:creator" content="@Abhigyan_Srivastava" />
                 <meta name="twitter:title" content="Showcase - CRUL" />
                 <meta name="twitter:description" content="Generate AI Image using CRUL" />
                 <meta name="twitter:image" content="https://crul.vercel.app/assets/img/CRUL_SHOWCASE_OG.png" />
