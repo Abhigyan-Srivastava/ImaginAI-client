@@ -156,7 +156,7 @@ const LandingPage = () => {
               About ImaginAI
             </p>
             <p className="text-slate md:pr-10 my-6 md:text-lg 2xl:text-xl font-poppins">
-              ImaginAI is a type of artificial intelligence system that is capable of creating new images based on a given set of inputs or parameters. These systems can be trained on a large dataset of images and can then generate new images that are similar in style or content to the images in the training dataset. Some examples of AI image generators include Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Transformer-based models. These systems have many potential uses such as creating new images for video games, movies, and advertising, as well as in research fields such as computer vision and generative art.
+            Welcome to ImaginAI, the cutting-edge AI image generator website that lets you bring your creative vision to life. With our powerful AI algorithms and user-friendly interface, you can easily generate stunning images that are sure to impress.
             </p>
             <a
               href=""
@@ -188,12 +188,15 @@ const LandingPage = () => {
               <dt className="mb-4">
                 <h3 className="text-xl  font-poppins">
                   <ol>
-                    <li>Creativity: ImaginAI can create unique and novel images that are difficult or impossible for humans to create.</li><br></br>
-                    <li>Speed and Efficiency: ImaginAI can generate a large number of images in a relatively short amount of time compared to manual image creation.</li><br></br>
-                    <li>Cost Savings: ImaginAI can save costs associated with hiring and training a team of designers or artists.</li><br></br>
-                    <li>Customizability: ImaginAI can be fine-tuned to generate images that match specific criteria or requirements, making them highly customizable.</li><br></br>
-                    <li>Consistency: ImaginAI can ensure consistent image quality and style across large volumes of images.</li><br></br>
-                    <li>Accessibility: ImaginAI can democratize image creation by making it more accessible to people who may not have the skills or resources to create images manually.</li><br></br>
+                  <li>ImaginAI: The Fast, User-Friendly AI Image Generator for All Your Creative Needs.
+</li><br></br>
+                    <li>Endless Possibilities: Customize and Create Your Own Unique Images with ImaginAI.
+</li><br></br>
+                    <li>Ditch Generic Imagery: ImaginAI Helps You Stand Out with Tailored Visuals.
+</li><br></br>
+                    <li>Design Like a Pro: ImaginAI's AI-Powered Platform Simplifies Graphic Design.
+</li><br></br>
+                    <li>Transform Your Visual Content with ImaginAI's Cutting-Edge Technology.</li><br></br>
                     </ol>
                 </h3>
               </dt>
@@ -230,7 +233,7 @@ The prints are museum-quality, made on thick and durable matte paper. Add a wond
         <div className="bg-lightblue py-20 px-4 text-zinc-500">
           <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
             <h2 className="mr-8 w-full md:w-1/3 text-3xl font-bold leading-9 text-zinc-400 mb-10 md:mb-0 font-poppins">
-              ImaginAI FAQs🙋
+              Frequently Asked Questions🙋
             </h2>
             <dl className="w-full md:w-2/3">
               <dt className="mb-4">
