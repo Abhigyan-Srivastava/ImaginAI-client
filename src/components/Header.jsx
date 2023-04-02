@@ -37,7 +37,7 @@ const Header = () => {
           <p onClick={()=>toggle()}>Showcase</p>
         </Link>
         <Link
-          to="/#faqs"
+          to="#faqs"
           className=" text-lightest_slate hover:text-green mx-5 font-poppins"
         >
           <p onClick={()=>toggle()}>FAQ</p>
